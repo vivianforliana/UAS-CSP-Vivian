@@ -70,6 +70,13 @@
     .marquee {
     margin-bottom: 20px; /* Atur jarak sesuai kebutuhan */
     }
+
+    .info {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
   </style>
 </head>
 <body data-bs-theme="dark" class="animate__animated animate__fadeIn">
@@ -303,52 +310,55 @@
         </div>
       </div>
 
-  <div class="container mt-5">
-    <section id="contact-us" class="py-5">
-      <div class="text-center mb-4">
-        <h2 class="section-title" id="Contact">Contact Us</h2>
-        <p>Stay connected with us through the following channels:</p>
+      <div class="container mt-5">
+        <section id="contact-us" class="py-5">
+          <div class="text-center mb-4">
+            <h2 class="section-title" id="Contact">Contact Us</h2>
+            <p>Stay connected with us through the following channels:</p>
+          </div>
+      
+          <div class="row justify-content-center">
+            <!-- Instagram -->
+            <div class="col-md-4 text-center mb-4">
+              <div class="card border-0 shadow shadow-lg">
+                <div class="card-body">
+                  <a href="https://www.instagram.com/nike/" class="text-decoration-none" target="_blank">
+                    <i class="fab fa-instagram fa-2x text-danger"></i>
+                    <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">Instagram Official NIKE</p>
+                  </a>
+                  <div class="info" style="display: none;">Follow us on Instagram for the latest updates!</div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Email -->
+            <div class="col-md-4 text-center mb-4">
+              <div class="card border-0 shadow shadow-lg">
+                <div class="card-body">
+                  <a href="mailto:vivian18751@gmail.com" class="text-decoration-none">
+                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                    <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">Email NIKE</p>
+                  </a>
+                  <div class="info" style="display: none;">Contact us via email for inquiries!</div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Phone -->
+            <div class="col-md-4 text-center mb-4">
+              <div class="card border-0 shadow shadow-lg">
+                <div class="card-body">
+                  <a href="tel:+123456789" class="text-decoration-none">
+                    <i class="fas fa-phone fa-2x text-success"></i>
+                    <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">+1 234 567 89</p>
+                  </a>
+                  <div class="info" style="display: none;">Call us for immediate assistance!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div class="row justify-content-center">
-        <!-- Instagram -->
-        <div class="col-md-4 text-center mb-4">
-          <div class="card border-0 shadow shadow-lg">
-            <div class="card-body">
-              <a href="https://www.instagram.com/nike/" class="text-decoration-none" target="_blank">
-                <i class="fab fa-instagram fa-2x text-danger"></i>
-                <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">Instagram Official NIKE</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Email -->
-        <div class="col-md-4 text-center mb-4">
-          <div class="card border-0 shadow shadow-lg">
-            <div class="card-body">
-              <a href="mailto:vivian18751@gmail.com" class="text-decoration-none">
-                <i class="fas fa-envelope fa-2x text-primary"></i>
-                <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">Email NIKE</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Phone -->
-        <div class="col-md-4 text-center mb-4">
-          <div class="card border-0 shadow shadow-lg">
-            <div class="card-body">
-              <a href="tel:+123456789" class="text-decoration-none">
-                <i class="fas fa-phone fa-2x text-success"></i>
-                <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">+1 234 567 89</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
 
   <div class="container mt-2">
     <section id="store-location" class="py-5">
@@ -377,6 +387,17 @@
   </footer>
 
   <script>
+
+document.querySelectorAll('.card-body').forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.querySelector('.info').style.display = 'block';
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    card.querySelector('.info').style.display = 'none';
+  });
+});
+
     // Get current year dynamically
     const yearElement = document.getElementById("year");
     const currentYear = new Date().getFullYear();
