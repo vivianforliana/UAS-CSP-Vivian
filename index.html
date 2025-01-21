@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKE WOMEN</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: #ffffff; /* Set default text color to white for better contrast */
+      background-color: rgb(36, 36, 36);
+    }
+
+    h1, h2, h5 {
+      color: #ffffff; /* Ensure headings are white */
+    }
+
+    .card {
+      background-color: #2c2c2c; /* Dark background for cards */
+      border-radius: 10px; /* Rounded corners for cards */
+    }
+
+    .card-title {
+      font-size: 1.25rem; /* Increase card title size */
+      font-weight: bold; /* Make card title bold */
+    }
+
+    .card-text {
+      font-size: 0.9rem; /* Set a comfortable font size for text */
+    }
+
+    /* News Section Styles */
+    .news-img {
+      height: 200px; /* Set a fixed height for news images */
+      object-fit: cover; /* Maintain aspect ratio and cover the area */
+    }
+
+    .section-title {
+      font-size: 2rem; /* Increase section title size */
+      font-weight: bold; /* Make section title bold */
+    }
+
+    /* Button Styles */
+    .btn-primary {
+      background-color: #007bff; /* Primary button color */
+      border: none; /* Remove border */
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3; /* Darker shade on hover */
+    }
+
+    /* Pagination Styles */
+    .pagination .page-link {
+      color: #ffffff; /* Set pagination link color to white */
+    }
+
+    .pagination .page-item.active .page-link {
+      background-color: #007bff; /* Active page link color */
+      border-color: #007bff; /* Active page link border color */
+    }
+
+    .marquee {
+    margin-bottom: 20px; /* Atur jarak sesuai kebutuhan */
+    }
+  </style>
+</head>
+<body data-bs-theme="dark" class="animate__animated animate__fadeIn">
+  
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <img src="https://i.pinimg.com/originals/20/60/2d/20602d43cc993811e5a6bd1886af4f33.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" style="filter: invert(1);">
+        <a class="navbar-brand" href="#" style="font-family: 'Barlow', sans-serif; font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #ffff; text-decoration: none; letter-spacing: 1px;">
+          Nike Women
+        </a>
+        <span class="navbar-separator mx-2" style="color: #fff;">|</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: 'Barlow', sans-serif; font-size: 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#News">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+          <a href="schart.html" class="btn btn-light ms-auto">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5" data-bs-theme="dark">
+    <marquee class="marquee" behavior="scroll" direction="left">
+      Shop smarter at Nike Official! Enjoy a special 20% discount plus an additional 10% off on your second purchase. Choose your favorites now!
+    </marquee>
+    <div class="row g-0">
+      <!-- Carousel Section -->
+      <div class="col-md-6">
+        <div id="nikeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#nikeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#nikeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#nikeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/1.png" class="d-block w-100 rounded-3" alt="Nike Slide 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Nike Official: Just Do It</h5>
+                <p>Explore our latest collection and redefine your style.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/2.png" class="d-block w-100 rounded-3" alt="Nike Slide 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Performance Meets Comfort</h5>
+                <p>Discover innovative designs for your active lifestyle.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/3.png" class="d-block w-100 rounded-3" alt="Nike Slide 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Shop the Latest Trends</h5>
+                <p>Be ahead of the curve with Nike's exclusive launches.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#nikeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#nikeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="col-md-5 offset-md-1">
+        <h1 style="font-family: 'Barlow'; font-weight: bold;">Welcome to NIKE OFFICIAL</h1>
+        <p style="font-family: Arial;" class="py-3">Where innovation, style, and performance converge! Discover our exclusive collection of top-tier shoes, apparel, and sports accessories designed to inspire your every move.</p>
+        <!-- <div style="display: flex; align-items: center; gap: 5px;">
+          <img src="img/logo_tokped-removebg-preview.png" alt="Tokopedia Nike" style="width: 9%; height: auto;" class="px-md-0 pt-2 cursor-pointer"> -->
+          <span style="font-family: Arial; font-size: 15px;">
+            <a href="https://www.tokopedia.com/nikejakartaofficial" style="font-family: 'Barlow'; display: inline-block; padding: 5px 5px; background-color: green; color: white; text-align: center; text-decoration: none; border-radius: 3px; transition: background-color 0.3s;" class="hover-maps" target="_blank">
+              <b>Shop on Tokopedia Now</b>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card border-0 shadow shadow-lg">
+      <div class="card-body">
+        <section>
+          <h2 class="section-title" id="Product">Our Product</h2>
+          <div class="d-flex justify-content-center flex-wrap">
+            <a href="gallery.html">
+              <img src="img/2-removebg-preview (1).png" class="product-image" alt="NIKE Product 1">
+            </a>
+            <a href="gallery.html">
+              <img src="img/3-removebg-preview (1).png" class="product-image" alt="NIKE Product 2">
+            </a>
+            <a href="gallery.html">
+              <img src="img/4-removebg-preview.png" class="product-image" alt="NIKE Product 3">
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card border-0 shadow shadow-lg">
+      <div class="card-body">
+        <section>
+          <div class="d-flex justify-content-center flex-wrap">
+            <p style="text-align: justify;">
+              Nike is not just about products; it’s about building a strong global community. Through inspiring campaigns like <strong><em>'Move to Zero'</em></strong> for sustainability and <strong><em>'Breaking Barriers'</em></strong> for equality, we aim to create a positive impact in the world. The Nike community connects individuals from diverse backgrounds who share the same passion for pushing themselves further. Our fitness programs and challenges help you achieve your sports goals while fostering meaningful connections with fellow Nike users.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <section id="news" class="py-5">
+      <div class="text-center mb-4">
+        <h2 class="section-title" id="News">Latest News</h2>
+        <p>Stay updated with the latest news from Nike:</p>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg">
+            <img src="img/newss.png" class="card-img-top news-img" alt="Nike Eco-Friendly Collection">
+            <div class="card-body">
+              <h5 class="card-title">New Eco-Friendly Collection</h5>
+              <p class="card-text">Discover how Nike is leading the way in sustainable fashion with its new eco-friendly collection.</p>
+              <a href="news1.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg">
+            <img src="img/newss (1).png" class="card-img-top news-img" alt="Nike Partners with Local Athletes">
+            <div class="card-body">
+              <h5 class="card-title">Nike Partners with Local Athletes</h5>
+              <p class="card-text">Learn about Nike's new initiative to support local athletes and communities.</p>
+              <a href="news2.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-lg">
+            <img src="img/Desain tanpa judul (4).png" class="card-img-top news-img" alt="Upcoming Nike Events">
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Nike Events</h5>
+              <p class="card-text">Join us for exciting events and activities happening in your area.</p>
+              <a href="news3.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="card border-0 shadow shadow-lg">
+          <div class="card-body">
+            <section>
+              <h2 class="section-title">Brand Ambassadors</h2>
+              <div id="ambassadorCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-4">
+                        <img src="img/ba1.png" class="d-block w-100 rounded-3" alt="Brand Ambassador 1">
+                      </div>
+                      <div class="col-4">
+                        <img src="img/ba2.png" class="d-block w-100 rounded-3" alt="Brand Ambassador 2">
+                      </div>
+                      <div class="col-4">
+                        <img src="img/ba3.png" class="d-block w-100 rounded-3" alt="Brand Ambassador 3">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-4">
+                        <img src="img/ba4.png" class="d-block w-100 rounded-3" alt="Brand Ambassador 4">
+                      </div>
+                      <div class="col-4">
+                        <img src="img/ba5.png" class="d-block w-100 rounded-3" alt="Brand Ambassador 5">
+                      </div>
+                      <div class="col-4">
+                        <img src="img/ba6.png" class="d-block w-100 rounded-3" alt="Brand Ambassador 6">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ambassadorCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ambassadorCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+  <div class="container mt-5">
+    <section id="contact-us" class="py-5">
+      <div class="text-center mb-4">
+        <h2 class="section-title" id="Contact">Contact Us</h2>
+        <p>Stay connected with us through the following channels:</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <!-- Instagram -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="card border-0 shadow shadow-lg">
+            <div class="card-body">
+              <a href="https://www.instagram.com/nike/" class="text-decoration-none" target="_blank">
+                <i class="fab fa-instagram fa-2x text-danger"></i>
+                <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">Instagram Official NIKE</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="card border-0 shadow shadow-lg">
+            <div class="card-body">
+              <a href="mailto:vivian18751@gmail.com" class="text-decoration-none">
+                <i class="fas fa-envelope fa-2x text-primary"></i>
+                <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">Email NIKE</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="col-md-4 text-center mb-4">
+          <div class="card border-0 shadow shadow-lg">
+            <div class="card-body">
+              <a href="tel:+123456789" class="text-decoration-none">
+                <i class="fas fa-phone fa-2x text-success"></i>
+                <p class="mt-2" style="font-size: 1.2rem; color: #ffffff;">+1 234 567 89</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container mt-2">
+    <section id="store-location" class="py-5">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Our Store Location</h2>
+        <p>Find us at the Nike Warehouse Center in Malang:</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.347080239007!2d112.62460759999999!3d-7.9630373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6282b156f436d%3A0x3d25b064aa53fa6!2sNike%20Warehouse%20Center%20Malang!5e0!3m2!1sen!2sid!4v1732174082829!5m2!1sen!2sid" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            style="border: 0; width: 100%; height: 450px;">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-4">
+    <p id="year"></p>
+  </footer>
+
+  <script>
+    // Get current year dynamically
+    const yearElement = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = `Copyright Nike © ${currentYear}`;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

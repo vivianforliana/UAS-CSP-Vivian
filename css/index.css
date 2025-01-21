@@ -1,0 +1,13 @@
+.product-image {
+    width: 190px;
+    margin: 10px;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Hitam dengan transparansi 50% */
+    padding: 10px; /* Tambahkan padding jika diperlukan */
+    border-radius: 5px; /* Tambahkan border-radius jika ingin sudut yang lebih halus */
+}
+.carousel-caption h5,
+.carousel-caption p {
+    color: white; /* Mengubah warna teks menjadi putih */
+}
